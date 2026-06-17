@@ -5,15 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parágrafos</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body, html {
+            width: 100vw;
+            height: 100vh;
+        }
+
         main {
+            width: 100vw;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .container {
+            background-color: rgb(233, 233, 233);
             max-width: 80vw;
             width: 100%;
+            border-radius: 8px;
+            padding: 15px 10px;
+        }
+
+        hr {
+            margin: 15px 0px;
+        }
+
+        p {
+            margin: 5px 0px;
+            line-height: 1.5em;
+        }
+
+        @media screen and (max-width: 300px) {
+            h1 {
+                font-size: 1em;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
