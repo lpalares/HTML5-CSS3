@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parágrafos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body, html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgb(233, 233, 233);
+            max-width: 80vw;
+            width: 100%;
+            border-radius: 8px;
+            padding: 15px 10px;
+        }
+
+        hr {
+            margin: 15px 0px;
+        }
+
+        p {
+            margin: 5px 0px;
+            line-height: 1.5em;
+        }
+
+        @media screen and (max-width: 300px) {
+            h1 {
+                font-size: 1em;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Parágrafos e Quebras de Linha</h1>
+            <hr>
+            <p>Você pode escrever um parágrafo de qualquer jeito. Basta colocar tudo no meio do par de tag &lt;p&gt; e &lt;/p&gt;</p> 
+            <!-- $lt; = LESS THAN / $gt; = GREATER THAN-->
+            <p>Se precisar quebrar o texto em algum lugar específico como esse, <br>você pode usar a tag &lt;br&gt;.</p>
+            <p>Vamos adicionar alguns símbolos especiais:
+                &reg; <!-- Marca registrada -->
+                &copy; <!-- Copyright -->
+                &trade; <!-- Trade Mark (Marca registrada) -->
+                &euro;
+                &pound; <!-- Libras -->
+                &yen;
+                &cent;
+                &delta; <!-- Delta pequeno -->
+                &Delta; <!-- Delta grande-->
+                &uparrow; <!-- Seta para cima -->
+                &uarr; <!-- Seta para cima -->
+            </p>
+            <p>Vamos adicionar alguns emoji:
+                &#x1f596;
+                &#x1f913;
+            </p>
+            <h2>Onde posso pegar os emoji?</h2>
+            <p>Dê uma olhada no <a href="https://emojipedia.org/" target="_blank" rel="nofollow">Emojipedia</a>.</p>
+        </div>
+    </main>
+</body>
+</html>
